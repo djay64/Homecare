@@ -1,0 +1,2 @@
+rootProject.name='Homecare'
+include ':app'

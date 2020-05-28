@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Homecare</string>
+    <string name="Homecare">homecare</string>
+    <string name="btnProprietaire">Je suis un propriétaire</string>
+    <string name="btnProfessionnel">Je suis un professionnel</string>
+    <string name="who">Qui êtes vous ?</string>
+    <string name="homecare">Homecare</string>
 </resources>

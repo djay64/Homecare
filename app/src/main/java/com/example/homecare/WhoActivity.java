@@ -9,7 +9,6 @@ import android.view.Window;
 import android.widget.Button;
 
 public class WhoActivity extends AppCompatActivity {
-    public static final int REQUEST_CODE = 1000;
     Button button_proprietaire;
 
     @Override
@@ -23,7 +22,7 @@ public class WhoActivity extends AppCompatActivity {
         button_proprietaire.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 final Intent acceuilProprietaire = new Intent(WhoActivity.this, SignInActivity.class);
-                startActivityForResult(acceuilProprietaire, REQUEST_CODE);
+                startActivity(acceuilProprietaire);
             }
         });
     }

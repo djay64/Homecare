@@ -71,7 +71,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_nom"
+                android:id="@+id/tv_nomForm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nom"
@@ -83,7 +83,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_nom"
+                android:id="@+id/et_nomForm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -99,7 +99,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_prenom"
+                android:id="@+id/tv_prenomFrom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Prenom"
@@ -111,7 +111,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_prenom"
+                android:id="@+id/et_prenomForm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -128,7 +128,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_email"
+                android:id="@+id/tv_emailForm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
@@ -140,7 +140,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_email"
+                android:id="@+id/et_emailForm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -156,7 +156,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_mdp"
+                android:id="@+id/tv_mdpForm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mots de passe"
@@ -168,7 +168,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_mdp"
+                android:id="@+id/et_mdpForm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -182,7 +182,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <Button
-                android:id="@+id/btn_inscription"
+                android:id="@+id/btn_inscriptionFrom"
                 android:text="Je m'inscris"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"

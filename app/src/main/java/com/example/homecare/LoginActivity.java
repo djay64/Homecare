@@ -22,7 +22,6 @@ public class LoginActivity extends AppCompatActivity {
     //firebase instances :
     private FirebaseAuth mAuth;
 
-    public static final int REQUEST_CODE = 2000;
     private static final String TAG = "Connection utilisateur" ;
     Button button_connection;
     Button button_inscription;
@@ -46,16 +45,21 @@ public class LoginActivity extends AppCompatActivity {
 
         button_connection.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
-                signIn(editText_email.getText().toString(), editText_mdp.getText().toString());
-
+                String email = " ";
+                String mdp = " ";
+                if (editText_email.getText().toString() != ""){
+                    email = editText_email.getText().toString();
+                }
+                if (editText_mdp.getText().toString() != ""){
+                    mdp = editText_mdp.getText().toString();
+                }
+                signIn(email, mdp);
             }
         });
-
         button_inscription.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 final Intent acceuilProprietaire = new Intent(LoginActivity.this, WhoActivity.class);
-                startActivityForResult(acceuilProprietaire, REQUEST_CODE);
+                startActivity(acceuilProprietaire);
             }
         });
 
@@ -68,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
         updateUI(currentUser);
     }
 
+    //methode concernant la connection d'un utilisateur qui a déja un compte
     public void signIn(String email, String mdp){
         mAuth.signInWithEmailAndPassword(email, mdp)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -89,11 +94,12 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
+
     private void updateUI(FirebaseUser currentUser) {
         if (currentUser != null){
             Log.d("Utilisateurs", currentUser.toString());
             final Intent acceuilProprietaire = new Intent(LoginActivity.this, MainProprietaireActivity.class);
-            startActivityForResult(acceuilProprietaire, REQUEST_CODE);
+            startActivity(acceuilProprietaire);
         }else {
 
         }

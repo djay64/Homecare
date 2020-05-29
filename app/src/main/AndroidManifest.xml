@@ -5,11 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/homecare"
-        android:logo="@drawable/homecare"
         android:label="@string/app_name"
+        android:logo="@drawable/homecare"
         android:roundIcon="@drawable/homecare"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainProprietaireActivity"></activity>
+        <activity android:name=".SignInActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".who"></activity>
+        <activity android:name=".WhoActivity" />
     </application>
 
 </manifest>

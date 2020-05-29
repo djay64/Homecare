@@ -1,82 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".WhoActivity">
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/IV_homecare"
-            android:layout_width="86dp"
-            android:layout_height="107dp"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
-            android:src="@drawable/homecare" />
-
-        <TextView
-            android:id="@+id/TV_Homecare"
-            android:layout_width="212dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
-            android:text="@string/homecare"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/ll_whoCenter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:gravity="center"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/homecare"
+                android:layout_marginTop="30dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/textViewTitre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homecare"
+                android:textColor="@color/colorPrimary"
+                android:textSize="45dp"
+                android:layout_marginBottom="130dp"
+                android:textStyle="italic"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qui êtes vous ?"
+                android:textColor="@color/colorOrange"
+                android:textSize="30dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center"
-            android:text="@string/who"
-            android:textSize="24sp" />
+            android:layout_marginTop="100dp">
+            <Button
+                android:id="@+id/btn_proprietaire"
+                android:text="Je suis un propriétaire"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_shape"
+                android:shadowColor="#292929"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                />
+            <Button
+                android:id="@+id/btn_professionnel"
+                android:text="Je suis un professionnel"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_shape"
+                android:shadowColor="#292929"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:layout_marginTop="38dp"
+                />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:gravity="bottom"
-        android:layout_weight="2"
-        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/B_Proprietaire"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_margin="10sp"
-            android:background="@color/colorBlue"
-            android:text="@string/btnProprietaire" />
-
-        <Button
-            android:id="@+id/B_Professionnel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_margin="10sp"
-            android:background="@color/colorOrange"
-            android:text="@string/btnProfessionnel" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

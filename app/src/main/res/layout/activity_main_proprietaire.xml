@@ -5,12 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainProprietaireActivity">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="283dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:src="@drawable/homecare">
+            </ImageView>
+            <TextView
+                android:id="@+id/textViewNom"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="nombablablabla"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"></TextView>
+            <TextView
+                android:id="@+id/textViewNgom"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:text="nomblablablabla"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:gravity="center">
+            </TextView>
+            <Button
+                android:id="@+id/button"
+                android:text="Deconnection"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_shape_normal"
+                android:shadowColor="#292929"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="125dp">
+            <TextView
+                android:id="@+id/textViewText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Veuillez selectionner un bien"
+                android:textColor="@color/colorOrange"
+                android:textSize="25dp"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

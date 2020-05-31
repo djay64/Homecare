@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/activity_main_drawer_profile"
+            android:icon="@drawable/personne_icon"
+            android:title="Mon profile"/>
+    </group>
+
+    <item android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/activity_main_drawer_plans"
+                    android:icon="@drawable/doc_check_icon"
+                    android:title="Mes plans" />
+                <item
+                    android:id="@+id/activity_main_drawer_factures"
+                    android:icon="@drawable/euro_icon"
+                    android:title="Mes factures" />
+                <item
+                    android:id="@+id/activity_main_drawer_interventions"
+                    android:icon="@drawable/personne_icon"
+                    android:title="Mes interventions" />
+                <item
+                    android:id="@+id/activity_main_drawer_alertes"
+                    android:icon="@drawable/cloche_icon"
+                    android:title="Mes alertes" />
+                <item
+                    android:id="@+id/activity_main_drawer_autorisations"
+                    android:icon="@drawable/cles_icon"
+                    android:title="Mes autorisations" />
+                <item android:gravity="bottom"
+                    android:id="@+id/activity_main_drawer_paramettre"
+                    android:icon="@drawable/param_icon"
+                    android:title="Paramettre" />
+                <item
+                    android:gravity="center"
+                    android:id="@+id/activity_main_drawer_deconnexion"
+                    android:icon="@drawable/rond_icon"
+                    android:title="Déconnexion" />
+            </group>
+        </menu>
+    </item>
+</menu>

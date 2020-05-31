@@ -17,6 +17,7 @@ public class MainProprietaireActivity extends AppCompatActivity {
     //firebase instances :
     private FirebaseAuth mAuth;
     Button button_inscription;
+    Button button_suite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainProprietaireActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_proprietaire);
         mAuth = FirebaseAuth.getInstance();
         button_inscription = (Button) findViewById(R.id.button);
+        button_suite = (Button) findViewById(R.id.button1);
 
         button_inscription.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -33,9 +35,12 @@ public class MainProprietaireActivity extends AppCompatActivity {
             }
         });
 
-    }
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
+        button_suite.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final Intent acceuilProprietaire = new Intent(MainProprietaireActivity.this, MainActivity.class);
+                startActivity(acceuilProprietaire);
+            }
+        });
+
     }
 }

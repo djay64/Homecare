@@ -45,6 +45,8 @@ public class LoginActivity extends AppCompatActivity {
 
         button_connection.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
+                //corriger ce qui apres pb quand on ne rentre pas rien appli plante
                 String email = " ";
                 String mdp = " ";
                 if (editText_email.getText().toString() != ""){

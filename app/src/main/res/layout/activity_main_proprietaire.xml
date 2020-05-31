@@ -64,6 +64,18 @@
                 android:gravity="center">
             </TextView>
         </LinearLayout>
+        <Button
+            android:id="@+id/button1"
+            android:text="bien 1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:background="@drawable/button_shape_normal"
+            android:shadowColor="#292929"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

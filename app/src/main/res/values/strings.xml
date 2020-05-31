@@ -5,4 +5,11 @@
     <string name="btnProfessionnel">Je suis un professionnel</string>
     <string name="who">Qui êtes vous ?</string>
     <string name="homecare">Homecare</string>
+
+    <!-- Used in NavigationDrawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

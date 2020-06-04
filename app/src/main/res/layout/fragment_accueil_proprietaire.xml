@@ -10,11 +10,30 @@
         android:orientation="vertical"
         android:layout_marginTop="125dp">
         <TextView
-            android:id="@+id/textViewText"
+            android:id="@+id/tv_bienvenue"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Bienvenue"
             android:textColor="@color/colorOrange"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_nom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="nom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="prenom"
+            android:textColor="@color/colorPrimary"
             android:textSize="25dp"
             android:gravity="center">
         </TextView>
@@ -23,10 +42,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Adresse du bien..."
-            android:textColor="@color/colorOrange"
+            android:textColor="@color/colorPrimary"
             android:textSize="25dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginTop="80dp">
         </TextView>
     </LinearLayout>
-
 </FrameLayout>

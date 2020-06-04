@@ -4,127 +4,175 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".FormAjoutInterventionsProprietaireActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="125dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajouter une nouvelle intervention "
+                android:textColor="@color/colorOrange"
+                android:textSize="20dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_nomForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Libelle"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" >
+            </TextView>
+            <EditText
+                android:id="@+id/et_nomForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_prenomFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type Intervention"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" >
+            </TextView>
+            <EditText
+                android:id="@+id/et_dateForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_emailForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observations"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" >
+            </TextView>
+            <EditText
+                android:id="@+id/et_emailForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_remarquesForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarques"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" >
+            </TextView>
+            <EditText
+                android:id="@+id/et_remarquesForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/homecare"
-                android:layout_marginTop="30dp">
-            </ImageView>
-            <TextView
-                android:id="@+id/textViewTitre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Homecare"
-                android:textColor="@color/colorPrimary"
-                android:textSize="45dp"
-                android:layout_marginBottom="130dp"
-                android:textStyle="italic"
-                android:shadowColor="@color/colorPrimaryDark"
-                android:shadowDx="1"
-                android:shadowDy="1"
-                android:shadowRadius="2" >
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:id="@+id/tv_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"
-                android:textColor="@color/colorPrimary"
-                android:textSize="30dp"
-                android:shadowColor="@color/colorPrimaryDark"
-                android:shadowDx="1"
-                android:shadowDy="1"
-                android:shadowRadius="2" >
-            </TextView>
-            <EditText
-                android:id="@+id/et_email"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="25"
-                android:inputType="textEmailAddress"
-                android:layout_marginLeft="20dp">
-            </EditText>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:id="@+id/tv_mdp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mot de passe"
-                android:textColor="@color/colorPrimary"
-                android:textSize="30dp"
-                android:shadowColor="@color/colorPrimaryDark"
-                android:shadowDx="1"
-                android:shadowDy="1"
-                android:shadowRadius="2" >
-            </TextView>
-            <EditText
-                android:id="@+id/et_mdp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="25"
-                android:inputType="textEmailAddress"
-                android:layout_marginLeft="20dp">
-            </EditText>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginTop="100dp">
             <Button
-                android:id="@+id/btn_connection"
-                android:text="Je me connecte"
+                android:id="@+id/btn_AjouterFrom"
+                android:text="Ajouter"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                android:layout_width="200dp"
-                android:layout_height="60dp"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
                 android:background="@drawable/button_shape"
                 android:shadowColor="#292929"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:layout_marginTop="100dp"
                 />
             <Button
-                android:id="@+id/btn_inscription"
-                android:text="Je m'inscris"
+                android:id="@+id/btn_AnnulerFrom"
+                android:text="Annuler"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:layout_width="200dp"
-                android:layout_height="60dp"
+                android:textSize="15sp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
                 android:background="@drawable/button_shape"
+                android:backgroundTint="@color/colorOrange"
                 android:shadowColor="#292929"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:layout_marginTop="38dp"
+                android:layout_marginTop="20dp"
                 />
         </LinearLayout>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

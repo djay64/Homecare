@@ -35,34 +35,35 @@
                 android:layout_marginBottom="50dp">
             </TextView>
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inscription"
-        android:textColor="@color/colorOrange"
-        android:textSize="30dp"
-        android:shadowColor="@color/colorPrimaryDark"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2">
-    </TextView>
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Je suis un proriétaire"
-            android:textColor="@color/colorOrange"
-            android:textSize="20dp"
-            android:shadowColor="@color/colorPrimaryDark"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:layout_marginTop="5dp">
-        </TextView>
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscription"
+                android:textColor="@color/colorOrange"
+                android:textSize="30dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Je suis un proriétaire"
+                android:textColor="@color/colorOrange"
+                android:textSize="20dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:layout_marginTop="5dp">
+            </TextView>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,7 +120,7 @@
                 android:layout_marginLeft="20dp">
             </EditText>
         </LinearLayout>
-    </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -159,13 +160,13 @@
                 android:id="@+id/tv_mdpForm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mots de passe"
+                android:text="Mot de passe"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30dp"
                 android:shadowColor="@color/colorPrimaryDark"
                 android:shadowDx="1"
                 android:shadowDy="1"
-                android:shadowRadius="2" >
+                android:shadowRadius="2">
             </TextView>
             <EditText
                 android:id="@+id/et_mdpForm"

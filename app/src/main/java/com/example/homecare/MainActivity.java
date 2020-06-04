@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         this.configureNavigationView();
 
-//        // 2 - Show First Fragment
-//        this.showFirstFragment();
+        // 2 - Show First Fragment
+        this.showFirstFragment();
 
     }
 

@@ -10,7 +10,8 @@
         android:roundIcon="@drawable/homecare"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormAjoutAutorisationsActivity"></activity>
+        <activity android:name=".FormAjoutBiensProprietaireActivity"></activity>
+        <activity android:name=".FormAjoutAutorisationsActivity" />
         <activity android:name=".FormAjoutInterventionsProprietaireActivity" />
         <activity android:name=".FormAjoutAlertesProprietaireActivity" />
         <activity android:name=".FormAjoutFacturesProprietaireActivity" />

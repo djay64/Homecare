@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Fragment fragmentInterventionsProprietaire;
     private Fragment fragmentAlertesProprietaire;
     private Fragment fragmentAutorisationsProprietaire;
+    private Fragment fragmentProfilProprietaire;
 
     //FOR DATAS
     // 2 - Identify each fragment with a number
@@ -94,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static final int FRAGMENT_INTERVENTIONS_PROPRIETAIRE = 3;
     private static final int FRAGMENT_ALERTES_PROPRIETAIRE = 4;
     private static final int FRAGMENT_AUTORISATIONS_PROPRIETAIRE = 5;
+    private static final int FRAGMENT_PROFIL_PROPRIETAIRE = 6;
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -103,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // 6 - Show fragment after user clicked on a menu item
         switch (id){
             case R.id.activity_main_drawer_profile:
-                this.showFragment(FRAGMENT_ACCUEIL_PROPRIETAIRE);
+                this.showFragment(FRAGMENT_PROFIL_PROPRIETAIRE);
                 break;
             case R.id.activity_main_drawer_plans :
                 this.showFragment(FRAGMENT_PLANS_PROPRIETAIRE);
@@ -146,6 +148,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case FRAGMENT_ACCUEIL_PROPRIETAIRE :
                 this.showAccueilFragment();
                 break;
+            case FRAGMENT_PROFIL_PROPRIETAIRE :
+                this.showProfilFragment();
+                break;
             case FRAGMENT_PLANS_PROPRIETAIRE :
                 this.showPlansFragment();
                 break;
@@ -167,10 +172,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     // 4 - Create each fragment page and show it
-
     private void showAccueilFragment(){
         if (this.fragmentAccueilProprietaire == null) this.fragmentAccueilProprietaire = AccueilProprietaireFragment.newInstance();
         this.startTransactionFragment(this.fragmentAccueilProprietaire);
+    }
+
+    private void showProfilFragment(){
+        if (this.fragmentProfilProprietaire == null) this.fragmentProfilProprietaire = ProfilProprietaireFragment.newInstance();
+        this.startTransactionFragment(this.fragmentProfilProprietaire);
     }
 
     private void showPlansFragment(){

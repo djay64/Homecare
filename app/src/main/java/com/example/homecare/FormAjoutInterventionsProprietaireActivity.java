@@ -13,7 +13,7 @@ public class FormAjoutInterventionsProprietaireActivity extends AppCompatActivit
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_ajout_interventions_proprietaire);
-        button_annuler = (Button)findViewById(R.id.btn_AnnulerFrom);
+        button_annuler = (Button)findViewById(R.id.btn_annuler_intervention_form);
 
         button_annuler.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

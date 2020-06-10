@@ -17,6 +17,7 @@
             android:gravity="center"
             android:layout_marginTop="125dp">
             <TextView
+                android:id="@+id/tv_titre_autorisation_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ajouter une nouvelle autorisation "
@@ -36,7 +37,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_nomForm"
+                android:id="@+id/tv_acces_autorisation_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Acces"
@@ -48,7 +49,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_nomForm"
+                android:id="@+id/et_acces_autorisation_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -64,7 +65,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_prenomFrom"
+                android:id="@+id/tv_professionnem_autorisation_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Professionnel"
@@ -76,7 +77,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_dateForm"
+                android:id="@+id/et_professionnel_autorisation_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -90,7 +91,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <Button
-                android:id="@+id/btn_AjouterFrom"
+                android:id="@+id/btn_ajouter_autorisation_form"
                 android:text="Ajouter"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
@@ -104,7 +105,7 @@
                 android:layout_marginTop="130dp"
                 />
             <Button
-                android:id="@+id/btn_AnnulerFrom"
+                android:id="@+id/btn_annuler_autorisation_form"
                 android:text="Annuler"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp"

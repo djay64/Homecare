@@ -31,5 +31,4 @@ public class User {
         this.prenom = prenom;
     }
 
-
 }

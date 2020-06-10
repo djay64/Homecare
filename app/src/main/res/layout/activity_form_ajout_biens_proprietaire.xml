@@ -17,6 +17,7 @@
             android:gravity="center"
             android:layout_marginTop="125dp">
             <TextView
+                android:id="@+id/tv_titre_bien_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ajouter un nouveau bien "
@@ -36,7 +37,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_nomForm"
+                android:id="@+id/tv_adesse_bien_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Adresse"
@@ -48,7 +49,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_nomForm"
+                android:id="@+id/et_adresse_bien_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -64,7 +65,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_prenomFrom"
+                android:id="@+id/tv_ville_bien_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ville"
@@ -76,7 +77,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_dateForm"
+                android:id="@+id/et_ville_bien_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -92,7 +93,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_emailForm"
+                android:id="@+id/tv_cp_bien_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CP"
@@ -104,7 +105,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_emailForm"
+                android:id="@+id/et_cp_bien_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -120,7 +121,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_emailfForm"
+                android:id="@+id/tv_date_bien_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date construction"
@@ -148,7 +149,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_emaileForm"
+                android:id="@+id/tv_surface_bien_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Surface"
@@ -174,7 +175,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <Button
-                android:id="@+id/btn_AjouterFrom"
+                android:id="@+id/btn_ajouter_bien_form"
                 android:text="Ajouter"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
@@ -188,7 +189,7 @@
                 android:layout_marginTop="130dp"
                 />
             <Button
-                android:id="@+id/btn_AnnulerFrom"
+                android:id="@+id/btn_annuler_bien_form"
                 android:text="Annuler"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp"

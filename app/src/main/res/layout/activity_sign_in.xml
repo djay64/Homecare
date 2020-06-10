@@ -15,13 +15,14 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageView
+                android:id="@+id/iv_logo_inscription"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/homecare"
                 android:layout_marginTop="30dp">
             </ImageView>
             <TextView
-                android:id="@+id/textViewTitre"
+                android:id="@+id/tv_inscription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Homecare"
@@ -41,6 +42,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <TextView
+                android:id="@+id/tv_titre_inscription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Inscription"
@@ -52,6 +54,7 @@
                 android:shadowRadius="2">
             </TextView>
             <TextView
+                android:id="@+id/tv_inscription_sous"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Je suis un proriétaire"
@@ -72,7 +75,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_nomForm"
+                android:id="@+id/tv_nom_inscription_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nom"
@@ -84,7 +87,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_nomForm"
+                android:id="@+id/et_nom_inscription_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -100,7 +103,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_prenomFrom"
+                android:id="@+id/tv_prenom_inscription_from"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Prenom"
@@ -112,7 +115,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_prenomForm"
+                android:id="@+id/et_prenom_inscription_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -129,7 +132,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_emailForm"
+                android:id="@+id/tv_email_inscription_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
@@ -141,7 +144,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_emailForm"
+                android:id="@+id/et_email_inscription_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -157,7 +160,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_mdpForm"
+                android:id="@+id/tv_mdp_inscription_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mot de passe"
@@ -169,7 +172,7 @@
                 android:shadowRadius="2">
             </TextView>
             <EditText
-                android:id="@+id/et_mdpForm"
+                android:id="@+id/et_mdp_inscription_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -183,7 +186,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <Button
-                android:id="@+id/btn_inscriptionFrom"
+                android:id="@+id/btn_inscription_inscription_from"
                 android:text="Je m'inscris"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"

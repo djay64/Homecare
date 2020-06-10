@@ -38,10 +38,10 @@ public class LoginActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        button_connection = (Button) findViewById(R.id.btn_connection);
-        button_inscription = (Button) findViewById(R.id.btn_inscription);
-        editText_email = (EditText) findViewById(R.id.et_email);
-        editText_mdp = (EditText) findViewById(R.id.et_mdp);
+        button_connection = (Button) findViewById(R.id.btn_connection_login);
+        button_inscription = (Button) findViewById(R.id.btn_inscription_login);
+        editText_email = (EditText) findViewById(R.id.et_email_login);
+        editText_mdp = (EditText) findViewById(R.id.et_mdp_login);
 
         button_connection.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

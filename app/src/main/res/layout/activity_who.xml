@@ -15,13 +15,14 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageView
+                android:id="@+id/iv_logo_who"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/homecare"
                 android:layout_marginTop="30dp">
             </ImageView>
             <TextView
-                android:id="@+id/textViewTitre"
+                android:id="@+id/tv_who"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Homecare"
@@ -41,6 +42,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <TextView
+                android:id="@+id/tv_titre_who"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Qui êtes vous ?"

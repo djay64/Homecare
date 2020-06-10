@@ -17,14 +17,21 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignInActivity extends AppCompatActivity {
     //firebase instances :
     private FirebaseAuth mAuth;
-
     private static final String TAG = "Inscription utilisateur" ;
 
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    private static FirebaseUser currentUser;
+
     Button button_inscription;
+    EditText editText_nom;
+    EditText editText_prenom;
     EditText editText_email;
     EditText editText_mdp;
 
@@ -36,15 +43,31 @@ public class SignInActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        button_inscription = (Button) findViewById(R.id.btn_inscriptionFrom);
-        editText_email = (EditText) findViewById(R.id.et_emailForm);
-        editText_mdp = (EditText) findViewById(R.id.et_mdpForm);
+        button_inscription = (Button) findViewById(R.id.btn_inscription_inscription_from);
+        editText_nom = (EditText) findViewById(R.id.et_nom_inscription_form);
+        editText_prenom = (EditText) findViewById(R.id.et_prenom_inscription_form);
+        editText_email = (EditText) findViewById(R.id.et_email_inscription_form);
+        editText_mdp = (EditText) findViewById(R.id.et_mdp_inscription_form);
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
 
         button_inscription.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 createAccount(editText_email.getText().toString(), editText_mdp.getText().toString());
             }
         });
+    }
+
+    private void userInsert() {
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        String uid = currentUser.getUid();
+        databaseReference = firebaseDatabase.getReference("proprietaire").child(uid);
+        String nom = editText_nom.getText().toString();
+        String prenom = editText_prenom.getText().toString();
+
+        User user = new User(nom,prenom);
+
+        databaseReference.setValue(user);
     }
 
     public void onStart() {
@@ -63,6 +86,7 @@ public class SignInActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            userInsert();
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -81,7 +105,6 @@ public class SignInActivity extends AppCompatActivity {
             final Intent acceuilProprietaire = new Intent(SignInActivity.this, MainProprietaireActivity.class);
             startActivity(acceuilProprietaire);
         }else {
-
         }
     }
 }

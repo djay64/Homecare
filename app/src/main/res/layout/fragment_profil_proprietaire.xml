@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <TextView
-            android:id="@+id/tv_bienvenue"
+            android:id="@+id/tv_titre_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MON PROFIL"
@@ -20,23 +20,23 @@
             android:layout_marginBottom="20dp">
         </TextView>
         <TextView
-            android:id="@+id/tv_nom"
+            android:id="@+id/tv_nom_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nom"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="25dp">
         </TextView>
         <TextView
-            android:id="@+id/tv_prenom"
+            android:id="@+id/tv_prenom_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="prenom"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="25dp">
         </TextView>
         <TextView
-            android:id="@+id/textViewTextf"
+            android:id="@+id/tv_adresse_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Adresse du bien..."

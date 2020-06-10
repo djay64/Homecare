@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // 1 - Show first fragment when activity is created
     private void showFirstFragment(){
-        Fragment visibleFragment = getSupportFragmentManager().findFragmentById(R.id.activity_main_frame_layout);
+        Fragment visibleFragment = getSupportFragmentManager().findFragmentById(R.id.activity_main_drawer_layout);
         if (visibleFragment == null){
             // 1.1 - Show News Fragment
             this.showFragment(FRAGMENT_ACCUEIL_PROPRIETAIRE);

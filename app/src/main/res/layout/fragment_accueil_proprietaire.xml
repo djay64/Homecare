@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:layout_marginTop="125dp">
         <TextView
-            android:id="@+id/tv_bienvenue"
+            android:id="@+id/tv_bienvenue_accueil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Bienvenue"
@@ -20,25 +20,25 @@
             android:layout_marginBottom="20dp">
         </TextView>
         <TextView
-            android:id="@+id/tv_nom"
+            android:id="@+id/tv_nom_acceuil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="nom"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="25dp"
             android:gravity="center">
         </TextView>
         <TextView
-            android:id="@+id/tv_prenom"
+            android:id="@+id/tv_prenom_acceuil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="prenom"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="25dp"
             android:gravity="center">
         </TextView>
         <TextView
-            android:id="@+id/textViewTextf"
+            android:id="@+id/tv_adresse_acceuil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Adresse du bien..."

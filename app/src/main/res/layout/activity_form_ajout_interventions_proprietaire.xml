@@ -17,6 +17,7 @@
             android:gravity="center"
             android:layout_marginTop="125dp">
             <TextView
+                android:id="@+id/tv_titre_intervention_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ajouter une nouvelle intervention "
@@ -36,7 +37,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_nomForm"
+                android:id="@+id/tv_libelle_intervention_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Libelle"
@@ -48,7 +49,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_nomForm"
+                android:id="@+id/et_libelle_intervention_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -64,7 +65,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_prenomFrom"
+                android:id="@+id/tv_type_intervention_from"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Type Intervention"
@@ -76,7 +77,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_dateForm"
+                android:id="@+id/et_type_intervention_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -91,7 +92,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_emailForm"
+                android:id="@+id/tv_observations_intervention_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Observations"
@@ -103,7 +104,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_emailForm"
+                android:id="@+id/et_observations_intervention_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -119,7 +120,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginTop="20dp">
             <TextView
-                android:id="@+id/tv_remarquesForm"
+                android:id="@+id/tv_remarques_intervention_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Remarques"
@@ -131,7 +132,7 @@
                 android:shadowRadius="2" >
             </TextView>
             <EditText
-                android:id="@+id/et_remarquesForm"
+                android:id="@+id/et_remarques_intervention_form"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
@@ -145,7 +146,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <Button
-                android:id="@+id/btn_AjouterFrom"
+                android:id="@+id/btn_ajouter_intervention_form"
                 android:text="Ajouter"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
@@ -159,7 +160,7 @@
                 android:layout_marginTop="100dp"
                 />
             <Button
-                android:id="@+id/btn_AnnulerFrom"
+                android:id="@+id/btn_annuler_intervention_form"
                 android:text="Annuler"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp"

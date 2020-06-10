@@ -14,7 +14,7 @@ public class FormAjoutFacturesProprietaireActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_ajout_factures_proprietaire);
 
-        button_annuler = (Button)findViewById(R.id.btn_AnnulerFrom);
+        button_annuler = (Button)findViewById(R.id.btn_annuler_facture_form);
 
         button_annuler.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

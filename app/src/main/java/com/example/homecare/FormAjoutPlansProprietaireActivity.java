@@ -13,7 +13,7 @@ public class FormAjoutPlansProprietaireActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_ajout_plan_proprietaire);
-        button_annuler = (Button)findViewById(R.id.btn_AnnulerFrom);
+        button_annuler = (Button)findViewById(R.id.btn_annuler_plan_form);
         button_annuler.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 FormAjoutPlansProprietaireActivity.this.finish();

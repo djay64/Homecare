@@ -36,8 +36,8 @@ public class AccueilProprietaireFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_accueil_proprietaire,
                 container, false);
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        nom = (TextView) view.findViewById(R.id.tv_nom);
-        prenom = (TextView) view.findViewById(R.id.tv_prenom);
+        nom = (TextView) view.findViewById(R.id.tv_nom_acceuil);
+        prenom = (TextView) view.findViewById(R.id.tv_prenom_acceuil);
 
 
         return view;
@@ -48,8 +48,9 @@ public class AccueilProprietaireFragment extends Fragment {
 
         super.onStart();
         String uid = currentUser.getUid();
+        Log.d("uid", uid);
 
-        DatabaseReference user = ref.child("proprietaire").child("1");
+        DatabaseReference user = ref.child("proprietaire").child(uid);
         user.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

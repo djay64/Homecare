@@ -91,8 +91,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
-                android:inputType="textEmailAddress"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                android:inputType="textPersonName">
             </EditText>
         </LinearLayout>
         <LinearLayout
@@ -119,8 +119,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
-                android:inputType="textEmailAddress"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                android:inputType="textPersonName">
             </EditText>
         </LinearLayout>
 
@@ -148,8 +148,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
-                android:inputType="textEmailAddress"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                android:inputType="textEmailAddress">
             </EditText>
         </LinearLayout>
         <LinearLayout
@@ -176,7 +176,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
-                android:inputType="textEmailAddress"
+                android:inputType="textPassword"
                 android:layout_marginLeft="20dp">
             </EditText>
         </LinearLayout>

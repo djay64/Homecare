@@ -1,5 +1,8 @@
 package com.example.homecare;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -25,6 +28,9 @@ public class AccueilProprietaireFragment extends Fragment {
     private static FirebaseUser currentUser;
     TextView nom;
     TextView prenom;
+    TextView adresse;
+    TextView ville;
+
     User connectedUser = new User();
 
     public static AccueilProprietaireFragment newInstance() {
@@ -36,9 +42,11 @@ public class AccueilProprietaireFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_accueil_proprietaire,
                 container, false);
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
         nom = (TextView) view.findViewById(R.id.tv_nom_acceuil);
         prenom = (TextView) view.findViewById(R.id.tv_prenom_acceuil);
-
+        adresse = (TextView) view.findViewById(R.id.tv_adresse_acceuil);
+        ville = (TextView) view.findViewById(R.id.tv_ville_acceuil);
 
         return view;
     }
@@ -48,16 +56,27 @@ public class AccueilProprietaireFragment extends Fragment {
 
         super.onStart();
         String uid = currentUser.getUid();
-        Log.d("uid", uid);
+
+        Bundle extras = this.getActivity().getIntent().getExtras();
+        final String idBien = extras.getString("idBien");
+
+        Log.d("idBien", idBien);
+
+
 
         DatabaseReference user = ref.child("proprietaire").child(uid);
         user.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-               connectedUser = dataSnapshot.getValue(User.class);
+                connectedUser = dataSnapshot.getValue(User.class);
 
-               nom.setText(connectedUser.getNom());
-               prenom.setText(connectedUser.getPrenom());
+                nom.setText(connectedUser.getNom());
+                prenom.setText(connectedUser.getPrenom());
+
+                Bien bien;
+                bien = dataSnapshot.child("bien").child(idBien).getValue(Bien.class);
+                adresse.setText(bien.getAdresse());
+                ville.setText(bien.getVille());
             }
 
             @Override
@@ -65,7 +84,7 @@ public class AccueilProprietaireFragment extends Fragment {
 
             }
         });
-
-
     }
 }
+
+

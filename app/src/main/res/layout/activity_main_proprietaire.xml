@@ -26,8 +26,8 @@
             </TextView>
         </LinearLayout>
         <Button
-            android:id="@+id/button1"
-            android:text="bien 1"
+            android:id="@+id/btn_accueil"
+            android:text="Ajouter un bien"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:layout_width="160dp"
@@ -36,7 +36,22 @@
             android:shadowColor="#292929"
             android:shadowDx="0"
             android:shadowDy="0"
-            android:shadowRadius="10"/>
+            android:shadowRadius="10"
+            android:layout_gravity="center"/>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

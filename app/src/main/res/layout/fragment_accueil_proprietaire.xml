@@ -41,11 +41,21 @@
             android:id="@+id/tv_adresse_acceuil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Adresse du bien..."
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="25dp"
             android:gravity="center"
             android:layout_marginTop="80dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_ville_acceuil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
         </TextView>
     </LinearLayout>
 </FrameLayout>

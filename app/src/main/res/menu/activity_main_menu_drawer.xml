@@ -7,7 +7,7 @@
         <item
             android:id="@+id/activity_main_drawer_profile"
             android:icon="@drawable/personne_icon"
-            android:title="Mon profile"/>
+            android:title="Mon profil"/>
     </group>
 
     <item android:title="Menu">
@@ -36,7 +36,7 @@
                 <item android:gravity="bottom"
                     android:id="@+id/activity_main_drawer_paramettre"
                     android:icon="@drawable/param_icon"
-                    android:title="Paramettres" />
+                    android:title="Paramètres" />
                 <item
                     android:gravity="center"
                     android:id="@+id/activity_main_drawer_deconnexion"

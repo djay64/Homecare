@@ -53,19 +53,19 @@
                 android:shadowDy="1"
                 android:shadowRadius="2">
             </TextView>
+
             <TextView
                 android:id="@+id/tv_inscription_sous"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Je suis un proriétaire"
-                android:textColor="@color/colorOrange"
-                android:textSize="20dp"
+                android:layout_marginTop="5dp"
                 android:shadowColor="@color/colorPrimaryDark"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
-                android:layout_marginTop="5dp">
-            </TextView>
+                android:text="Je suis un propriétaire"
+                android:textColor="@color/colorOrange"
+                android:textSize="20dp"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

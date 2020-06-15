@@ -39,11 +39,21 @@
             android:id="@+id/tv_adresse_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adresse du bien..."
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="25dp"
             android:gravity="center"
-            android:layout_marginTop="80dp">
+            android:layout_marginTop="70dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_ville_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
         </TextView>
         <ImageButton
             android:id="@+id/btn_add_biens"
@@ -61,6 +71,17 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_crayon"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_choix_bien"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homecare"
             android:background="@null"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"

@@ -57,12 +57,13 @@ public class AccueilProprietaireFragment extends Fragment {
         super.onStart();
         String uid = currentUser.getUid();
 
-        Bundle extras = this.getActivity().getIntent().getExtras();
-        final String idBien = extras.getString("idBien");
+//        Bundle extras = this.getActivity().getIntent().getExtras();
+//        final String idBien = extras.getString("idBien");
+        SharedPreferences pref = getActivity().getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+        final String idBien = pref.getString("idBien", "0");
+
 
         Log.d("idBien", idBien);
-
-
 
         DatabaseReference user = ref.child("proprietaire").child(uid);
         user.addValueEventListener(new ValueEventListener() {

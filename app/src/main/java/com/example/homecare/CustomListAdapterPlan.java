@@ -9,13 +9,13 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class CustomListAdapter extends BaseAdapter {
+public class CustomListAdapterPlan extends BaseAdapter {
 
-    private List<Bien> listData;
+    private List<Plan> listData;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public CustomListAdapter(Context aContext,  List<Bien> listData) {
+    public CustomListAdapterPlan(Context aContext, List<Plan> listData) {
         this.context = aContext;
         this.listData = listData;
         layoutInflater = LayoutInflater.from(aContext);
@@ -37,27 +37,26 @@ public class CustomListAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
+        CustomListAdapterPlan.ViewHolder holder;
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.list_item_layout, null);
-            holder = new ViewHolder();
-            holder.adresse = (TextView) convertView.findViewById(R.id.tv_adresse_list);
-            holder.ville = (TextView) convertView.findViewById(R.id.tv_ville_list);
+            convertView = layoutInflater.inflate(R.layout.list_item_plan_layout, null);
+            holder = new CustomListAdapterPlan.ViewHolder();
+            holder.libelle = (TextView) convertView.findViewById(R.id.tv_libelle_list);
+            holder.date = (TextView) convertView.findViewById(R.id.tv_date_list);
             convertView.setTag(holder);
         } else {
-            holder = (ViewHolder) convertView.getTag();
+            holder = (CustomListAdapterPlan.ViewHolder) convertView.getTag();
         }
 
-        Bien bien = this.listData.get(position);
-        holder.adresse.setText(bien.getAdresse());
-        holder.ville.setText("Ville: " + bien.getVille());
+        Plan plan = this.listData.get(position);
+        holder.libelle.setText(plan.getLibelle());
+        holder.date.setText("Date: " + plan.getDate());
 
         return convertView;
     }
 
     static class ViewHolder {
-        TextView adresse;
-        TextView ville;
+        TextView libelle;
+        TextView date;
     }
 }
-

@@ -1,7 +1,6 @@
 package com.example.homecare;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -9,19 +8,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -38,7 +31,7 @@ public class MainProprietaireActivity extends AppCompatActivity {
     ListView listView;
     DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
     private static FirebaseUser currentUser;
-    CustomListAdapter adapter;
+    CustomListAdapterBien adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +51,7 @@ public class MainProprietaireActivity extends AppCompatActivity {
 
         List<Bien> listBiens = getListData();
         listView = (ListView) findViewById(R.id.listView);
-        adapter = new CustomListAdapter(this, listBiens);
+        adapter = new CustomListAdapterBien(this, listBiens);
         listView.setAdapter(adapter);
 
         // When the user clicks on the ListItem
@@ -69,9 +62,12 @@ public class MainProprietaireActivity extends AppCompatActivity {
                 Object o = listView.getItemAtPosition(position);
                 Bien bien = (Bien) o;
 
-
                 final Intent acceuilProprietaire = new Intent(MainProprietaireActivity.this, MainActivity.class);
-                acceuilProprietaire.putExtra("idBien", bien.getId());
+                SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+                SharedPreferences.Editor editor = pref.edit();
+                editor.putString("idBien", bien.getId());
+                editor.commit();
+//                acceuilProprietaire.putExtra("idBien", bien.getId());
                 startActivity(acceuilProprietaire);
             }
         });
@@ -95,8 +91,7 @@ public class MainProprietaireActivity extends AppCompatActivity {
 //                    Log.d("adresse",snapshot.child("adresse").getValue().toString());
                     bien.setVille(snapshot.child("ville").getValue().toString());
                     bien.setId(snapshot.getKey());
-                    Log.d("id",bien.getId());
-
+//                    Log.d("id",bien.getId());
 
                     list.add(bien);
 
@@ -111,7 +106,4 @@ public class MainProprietaireActivity extends AppCompatActivity {
         });
         return list;
     }
-
-
-
 }

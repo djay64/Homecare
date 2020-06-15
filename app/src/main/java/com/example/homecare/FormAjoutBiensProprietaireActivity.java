@@ -66,7 +66,9 @@ public class FormAjoutBiensProprietaireActivity extends AppCompatActivity {
     private void bienInsert() {
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         String uid = currentUser.getUid();
+
         databaseReference = firebaseDatabase.getReference("proprietaire").child(uid).child("bien");
+
         String adresse = editText_adresse.getText().toString();
         String ville = editText_ville.getText().toString();
         String cp = editText_cp.getText().toString();
